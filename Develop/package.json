@@ -1,7 +1,7 @@
 {
   "name": "mongoose_skeleton",
   "version": "1.0.0",
-  "description": "",
+  "description": "A workout tracking app using MongoDB",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,11 +9,23 @@
     "watch": "nodemon server.js",
     "seed": "node seeders/seed.js"
   },
-  "author": "",
+  "author": "Kogan Pack",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.3",
     "mongoose": "^5.3.16",
     "morgan": "^1.9.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/koganp42/workout-tracker.git"
+  },
+  "keywords": [
+    "mongodb",
+    "workout"
+  ],
+  "bugs": {
+    "url": "https://github.com/koganp42/workout-tracker/issues"
+  },
+  "homepage": "https://github.com/koganp42/workout-tracker#readme"
 }
