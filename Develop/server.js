@@ -12,9 +12,11 @@ app.use(logger("dev"));
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(morgan('combined'));
+app.use(logger('combined'));
 
 app.use(express.static("public"));
+require("./routes/html-routes")(app);
+const router = require("./routes/api-routes");
 
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/populate", { useNewUrlParser: true });
 
